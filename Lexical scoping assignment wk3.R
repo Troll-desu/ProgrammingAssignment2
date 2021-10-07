@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
   setInverse <- function(inverse) invrs <<- inverse ##inverse set as invrs
   getInverse <- function() invrs{ ## gets the inverse value
   list(set = set, get = get,setInverse = setInverse, 
-       getInverse = getInverse)
+       getInverse = getInverse)   ##unequivocal
 }
 ## Second part inversing
 ## message view inverse matrix value
@@ -34,3 +34,5 @@ cacheSolve <- function(x, ...) {
   x$setInverse(invrs)
   invrs
 }
+
+##Hatdog ni Aljur
