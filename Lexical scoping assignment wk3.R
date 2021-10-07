@@ -19,10 +19,12 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get,setInverse = setInverse, 
        getInverse = getInverse)
 }
+## Second part inversing
+## message view inverse matrix value
 ## Returning matrix from an inverse of x
 cacheSolve <- function(x, ...) {
   ## Matrix return that is an inverse of x
-  j <- x$getInverse()
+  invrs <- x$getInverse()
   if(!is.null(invrs)){
     message("Fetching cached data please wait")
     return(invrs)
